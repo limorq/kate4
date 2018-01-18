@@ -1,0 +1,198 @@
+
+/*Creates the "fixed" navbar visible on page load */
+#navbar {
+    background-color: rgba(161, 82, 24, 0.8);  
+    margin-bottom: 0px; 
+    height: 55px;
+}
+
+.fixed-top.scrolled {
+  background-color: rgb(161, 82, 24) !important;
+  transition: background-color 200ms linear;
+}
+
+
+/*Styles the logo */
+brand {
+  font-family: 'Yeseva One', cursive;
+  font-size: 2.5em;
+  color: floralwhite;
+  letter-spacing: 2px;
+  margin-left: 5%;
+}
+
+p {
+    font-family: 'Alegreya', serif;
+    font-size: 18px; 
+    text-align: center; 
+}
+
+.about {
+    color: black;
+    background: rgba(133, 102, 71, 0.9);
+    text-align:center;
+    padding:40px 320px; 
+    
+}
+
+#form {
+  display: block;
+  margin: 7% auto 3% auto;
+  height: 500px;
+  width: 600px;
+  background-color: #543D39;
+  border-radius: 5px;
+  color: floralwhite;
+  padding: 10px; 
+  padding-top: 20px; 
+  font-family: 'Yeseva One', cursive;
+
+}
+
+#phone {
+  font-size: 1.3em;
+  color: floralwhite;
+  float: right;
+  margin-top: -2%;
+  margin-right: 45px;
+  font-family: 'Yeseva One', cursive;
+}
+
+.carousel1 {
+color: floralwhite;
+height: 250px;
+background-color: #BC9B63;
+text-align:center;
+padding:70px 320px; 
+font-family: 'Alegreya', serif;
+
+}
+
+.carousel2 {
+  background-color:#DFB588; 
+  color: black;
+  height: 500px;
+  
+  padding:70px 80px;
+  position:relative
+        
+  }
+
+ .carousel3 {
+  background-color:#282E34;
+  height: 300px;
+}
+
+.carousel4 {
+   background-color:#af9880; 
+   color: black;
+   height: 410px;
+   margin-top: -2%;
+}
+
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #856647, black, #856647);
+  background-image: -moz-linear-gradient(left, #856647, black, #856647);
+  background-image: -ms-linear-gradient(left, #856647, black, #856647);
+  background-image: -o-linear-gradient(left, #856647, black, #856647); 
+}
+
+.lkLogo {
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+}
+
+
+#connect {
+  margin-top: 30px; 
+}
+
+.ul {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+.inline {
+  padding-right: 12%;
+  padding-left: 12%;
+  margin-top: 5%;
+  color: floralwhite;
+}
+
+
+
+.lib {
+  font-size: 1.50em;
+}
+
+.contactBox {
+   color:#ddd;
+   background-color:#DFB588;
+   opacity: 0.8;
+   text-align:center;
+   padding:50px;
+}
+
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+  
+  #phone {
+    margin-top: -5%;
+    margin-right: 15%;
+  }
+
+  #media3, #media4, #media5 {
+    height: 650px;
+    padding: 40px 70px;
+  }
+
+ }
+
+ 
+@media all and (max-width: 480px) { 
+
+  #media1, #media6, #media7 {
+    background-attachment: scroll;
+    min-width: 690px;
+  }
+
+  #media2 {
+    letter-spacing: 1px;
+  }
+
+  #phone {
+    margin-top: -5%;
+    margin-right: 15%;
+  }
+
+  .carousel {
+    min-width: 690px;
+  }
+
+  #media3, #media4, #media5 {
+      padding: 40px 70px;
+      height: 650px;
+    }
+
+  #media8 {
+    width: 690px;
+  }
+  
+  #carousel2 {
+    min-width: 100%;
+  }
+
+  .contactBox {
+    width: 690px;
+  }
+
+}

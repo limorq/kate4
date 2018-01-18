@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kate's Art</title>
+    <!-- Link the built style sheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Link to the bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Link to google fonts -->     
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One|Signika|Alegreya|Lateef" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.1.1/firebaseui.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Links to enable carousel function --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    
+    <style>
+            body, html {
+              height: 100%;
+              margin: 0;
+              
+            }
+            
+            .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+              position: relative;
+              opacity: 0.9;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow: hidden;
+            }
+            .bgimg-1 {
+              background-image: url("./assets/images/long2.jpg");
+              min-height: 100%;
+            }
+            
+            .bgimg-2 {
+              background-image: url("./assets/images/long3.jpg");
+              min-height: 600px;
+            }
+            
+            .bgimg-3 {
+              background-image: url("./assets/images/long1.jpg");
+              min-height: 600px;
+            }
+            .bgimg-4 {
+              background-image: url("./assets/port8.jpg");
+              min-height: 400px;
+            }
+        
+            .caption {
+              position: absolute;
+              left: 0;
+              top: 51%;
+              width: 100%;
+              text-align: center;
+              color: #543D39;
+            }
+            
+            .caption span.border1 {
+              background-color: rgba(62, 49, 9, 0.8);
+              color: floralwhite;
+              padding: 10px;
+              font-size: 25px;
+              letter-spacing: 10px;
+              border-radius: 5px;
+              font-family: 'Yeseva One', cursive;
+            }
+
+            .caption span.border {
+              background-color:transparent;
+              font-size:40px;
+              color: #f7f7f7; 
+              font-weight: bold;
+              padding: 10px;
+            }
+            
+            h3 {
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              font: 20px;
+              font-family: 'Yeseva One', cursive;
+              color: floralwhite;
+              padding-bottom: 10px; 
+              text-align: center;
+            }      
+
+            h4 {
+              font-family: 'Yeseva One', cursive;
+              text-align: center;
+            }
+          
+    </style>
+
+</head>
+<body>
+ 
+    <!-- Creates the Logo Nav bar --> 
+    <div id= "navbar" class=" fixed-top">
+            <brand>Kate's Artwork</brand>
+            <div>
+              <!--<button id="admin" onClick=>Admin</button> -->
+              <p id="phone">(310) 892-1331</p>
+            </div>
+    </div>
+
+    <!-- Sets the first image and the site caption --> 
+    <div id = "media1" class = "bgimg-1">
+        <div class = "caption">
+            <span id="media2" class = "border1">Any Text/Color Can Go Here</span>
+        </div>
+    </div>
+
+
+    <div class="carousel1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quo facere, molestias ab necessitatibus exercitationem, harum animi sint, adipisci quaerat consectetur aspernatur voluptatem, magnam enim. Corporis, voluptatem minima labore dolor.</p>
+    </div>
+      
+
+
+    <!-- Creates the Services section - title only -->
+    <div id="media6" class="bgimg-2">
+            <div class="caption">
+              <span class="border" style="border-radius: 3px; background-color: rgba(62, 49, 9, 0.8); opacity: 0.8; color: #FAF7E9;">PORTFOLIO</span>
+            </div>
+    </div>
+
+    <!-- Creates the Services section - content only -->
+          
+
+          <!-- FIRST CAROUSEL -->
+            <div class="carousel2">
+
+               <!-- WHERE MY CODE STARTS -->  
+               <div class="row">
+                 <div class="col-xs-2"><img src="./assets/images/art1.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art2.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art3.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art4.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art5.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art6.jpg" class="img-thumbnail"></div>
+               </div>
+               <div class="row">
+                 <div class="col-xs-2"><img src="./assets/images/art7.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art8.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art9.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art10.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art11.jpg" class="img-thumbnail"></div>
+                 <div class="col-xs-2"><img src="./assets/images/art12.jpg" class="img-thumbnail"></div>
+               </div>
+              <!-- WHERE MY CODE ENDS --> 
+            </div>
+      
+            
+    
+
+    <!-- Creates the contact section - title only -->
+     <div id="media7" class="bgimg-3">
+        <div class="caption">
+              <span class="border" style="border-radius: 3px; background-color: rgba(62, 49, 9, 0.8); opacity: 0.8; color: #FDFBDC;">CONTACT ME</span>
+        </div>
+    </div>
+
+
+    <!-- Creates the Contact section -->     
+    
+        
+        <div class="contactBox">
+
+                        
+                          <div id ="form">
+                            <h3 style="color: white; font-size: 30px;">Contact</h3>
+                            <p class="ul">Cell:</p>
+                            <p>(310) 892-1331</p>
+                            <p class="ul">Email:</p>
+                            <p>Katelasam2@gmail.com</p>
+                            <p class ="ul">Location:</p>
+                            <p>Pacific Palisades, CA 90272</p>
+
+                          
+                        </div>
+                      
+                    
+      
+          
+        </div>
+  
+        
+                 
+
+<script>
+    /* JS that creates the on scroll function of the navbar that changes it from a solid bar to transparent */
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          });
+    }); 
+</script>
+
+
+</body>
+</html>
